@@ -1,0 +1,302 @@
+:root {
+    --color-main-400: hsl(196, 84%, 35%);
+    --color-dark-600: hsl(196, 24%, 46%);
+    --color-dark-700: hsl(29, 12%, 37%);
+    --color-dark-800: hsl(193, 8%, 23%);
+    --color-light-200: hsl(31, 78%, 58%);
+    --color-light-300: hsl(31, 31%, 50%);
+    --font-family-main: "postino-std";
+    --font-family-second: "peridot-devanagari";
+    --font-family-button: "postino-std";
+    --font-size-header: 1rem;
+    --font-size-main: 1rem;
+    --font-size-footer: 1rem;
+    --font-size-button: 1rem;
+}
+
+/* General
+====================================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+html {
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--color-main-400);
+    font-family: var(--font-family-main);
+    color: white;
+    text-shadow: 0 3px 3px black;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h2,
+h3 {
+    text-align: center;
+    
+}
+
+@media (min-width: 1100px) {
+
+    li {
+        display: inline;
+        padding: 1.5rem;
+    }
+    #mission img {
+        width: 25rem;
+        height: auto;
+    }
+}
+
+@media (max-width: 897px) {
+    .desktop {
+        display: none;
+    }
+    li {
+        display: inline;
+        padding: 1rem;
+    }
+
+    #mission img {
+        width: 20rem;
+        height: auto;
+    }
+
+}
+
+@media (min-width: 897px) and (max-width: 1100px) {
+    #mission img {
+        width: 21rem;
+        height: auto;
+    }
+    li {
+    display: inline;
+    padding: 1.25rem;
+    }
+    #mission img {
+        width: 22rem;
+        height: auto;
+    }
+}
+
+
+/* modules
+==================================================== */
+
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-dark-800);
+}
+
+a:active {
+    color: var(--color-light-300);   
+}
+
+button {
+    font-family: var(--font-family-button);
+    color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    color: black;
+    box-shadow: 0px 3px 3px black;
+}
+
+button:hover {
+    color: var(--color-dark-800);
+    box-shadow: 0px 3px 3px var(--color-dark-800);
+
+}
+
+button:active {
+    color: var(--color-light-300);   
+    box-shadow: 0px 0px 0px black;
+    margin-top: 3px;
+    margin-bottom: -3px;
+}
+
+.play-button img:hover {
+    scale: 1.5;
+}
+
+.play-button img:active {
+    scale: .9;
+    color: var(--color-main-400);
+}
+
+
+/* header 
+======================================================*/
+
+header {
+    background-image: url(photos/BlueSoundWave.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 55%;
+    color: white;
+    height: 40rem;
+}
+
+header .main-container {
+    justify-items: center;
+    height: 100%;
+}
+
+.hero {
+    height: 90%;
+}
+
+.hero .flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.hero .inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 12rem;
+    height: auto;
+    justify-self: center;
+}
+
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+/* hero section */
+
+
+
+/* main 
+=================================================== */
+
+/* creators section */
+
+.portrait img {
+    width: 20rem;
+    height: auto;
+}
+
+.play-button img {
+    width: 5rem;
+    height: auto;
+}
+
+#creators .card {
+    justify-items: center;
+    background-color: white;
+}
+
+#creators .flex-container {
+    display: flex;
+    overflow: scroll;
+}
+
+
+
+/* mission section */
+
+#mission {
+    padding: 0 6rem;
+}
+
+#mission .flex-container {
+    
+}
+
+#mission .flex-container,
+#mission .card {
+    display: flex;
+    justify-items: center;
+    gap: 1rem;
+}
+
+#mission .right-column {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+#mission button {
+    width: 8rem;
+    margin: 1rem auto 2rem auto;
+}
+
+.mobile .flex-container {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* aside section */
+
+#aside .main-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+#aside .flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-items: center;
+}
+
+#aside img {
+    width: 15rem;
+    height: auto;
+}
+
+#aside figcaption {
+    padding: 1rem 0;
+}
+
+
+/* footer 
+============================================== */
+
+footer {
+    font-size: .9rem;
+}
+
+footer .flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+
