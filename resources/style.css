@@ -33,7 +33,7 @@ body {
     background-color: var(--color-main-400);
     font-family: var(--font-family-main);
     color: white;
-    text-shadow: 0 3px 3px black;
+    text-shadow: 0 2px 2px black;
 }
 
 h1 {
