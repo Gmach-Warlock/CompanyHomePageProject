@@ -64,6 +64,9 @@ h3 {
         width: 25rem;
         height: auto;
     }
+    .mobile {
+        display: none;
+    }
 }
 
 @media (max-width: 897px) {
